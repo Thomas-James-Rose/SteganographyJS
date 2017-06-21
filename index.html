@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Steganography</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <h1>Steganography</h1>
+    <table>
+      <tr>
+        <th>Heightmap</th>
+        <th>Tex1</th>
+        <th>Tex2</th>
+        <th>Tex3</th>
+        <th>Tex4</th>
+        <th>Extracted Heightmap</th>
+      </tr>
+      <tr>
+        <td id="map-cell"></td>
+        <td class="tex-cell"></td>
+        <td class="tex-cell"></td>
+        <td class="tex-cell"></td>
+        <td class="tex-cell"></td>
+        <td id="extract-cell"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="stego-cell"></td>
+        <td class="stego-cell"></td>
+        <td class="stego-cell"></td>
+        <td class="stego-cell"></td>
+        <td></td>
+      </tr>
+    </table>
+    <img id="heightmap" src="images/noise.bmp" alt="Image to embed">
+    <img class="texture" src="images/mud.jpg" alt="Carrier medium">
+    <img class="texture" src="images/grass.jpg" alt="Carrier medium">
+    <img class="texture" src="images/lava.jpg" alt="Carrier medium">
+    <img class="texture" src="images/jungle_stone.jpg" alt="Carrier medium">
+
+    <!-- Steganography JS -->
+    <script src="js/steganography.js" type="text/javascript"></script>
+  </body>
+
+</html>
